@@ -1,0 +1,292 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(248, 248, 248);
+}
+.running-text {
+    margin-top: 5px;
+    height: 30px;	
+    overflow: hidden;
+    position: relative;
+}
+
+.running-text span {
+font-size: 14px;
+position: absolute;
+width: 100%;
+height: 100%;
+margin: 0;
+text-align: center;
+/* Starting position */
+-moz-transform:translateX(100%);
+-webkit-transform:translateX(100%);	
+transform:translateX(100%);
+/* Apply animation to this element */	
+-moz-animation: running-text 15s linear infinite;
+-webkit-animation: running-text 15s linear infinite;
+animation: running-text 15s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes running-text {
+0%   { -moz-transform: translateX(100%); }
+100% { -moz-transform: translateX(-100%); }
+}
+
+@-webkit-keyframes running-text {
+0%   { -webkit-transform: translateX(100%); }
+100% { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes running-text {
+0%   { 
+-moz-transform: translateX(100%); /* Firefox bug fix */
+-webkit-transform: translateX(100%); /* Firefox bug fix */
+transform: translateX(100%); 		
+}
+
+100% { 
+-moz-transform: translateX(-100%); /* Firefox bug fix */
+-webkit-transform: translateX(-100%); /* Firefox bug fix */
+transform: translateX(-100%); 
+}
+
+}
+
+.hero{
+    color: rgb(255, 255, 255);
+    background-color: #876B64;
+}
+
+
+
+/* content 2 */
+.jadwal-buka{
+    background-color: rgb(0, 0, 0) !important;
+    z-index: 10;
+}
+.jadwal {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: -10px !important;
+}
+
+.btn-jadwal{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ffd806;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.openinghours {
+    font-family:Lucida Console;
+    border-radius:4px;
+    margin:10px;
+    box-shadow: 0 0 10px black;
+    padding:0 10px 0 10px;
+    overflow: hidden;
+    display: inline-block;
+}
+.openinghourscontent {
+    float:left;
+}
+
+.today {
+    color: #dab904;
+}
+.opening-hours-table tr td:first-child {
+    font-weight:bold;
+}
+#open-status {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+.openorclosed:after {
+    content:" Buka selama jam-jam ini:";
+}
+.open {
+    color:rgb(255, 255, 255);
+}
+.open:after {
+    content:" Buka";
+    color: rgb(255, 255, 255);
+}
+.closed:after {
+    content:" Tutup";
+    color: red;
+}
+.opening-hours-table tr td {
+    padding:5px;
+}
+/* last content 2 */
+
+/* content 3 */
+.taggbox-container{
+    margin-top: -50px;
+    z-index: -9999;
+  
+}
+/* last content 3 */
+/* content 4 */
+.h1-content4{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+.content-4{
+    background-color: #876B64;
+    height: 55px;
+    border-radius: 0px 0px 10px 10px;
+}
+/* last content 4 */
+
+/* content 5 */
+.span-peta{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-left: 40px;
+}
+/* last content 5 */
+
+/* content 6 */
+.btn-beli{
+    background-color: #876B64;
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+.p-content-6{
+    font-family: Caveat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+}
+.alamat-content-6{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+.btn-beli-modal{
+    background-color: rgb(255, 255, 255);
+}
+.btn-beli-modal:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: none !important;
+}
+.btn-beli-modal-kanan{
+    background-color: #57B109;
+}
+.btn-beli-modal-kanan:hover{
+    background-color: #57B109;
+    box-shadow: none !important;
+}
+/* last content 6 */
+.sticky-footer {
+    display: block;
+    height: 58px;
+    background: #0e0e0e;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 3;
+  }
+  .sticky-footer .one-fourth {
+    width: 20%;
+    float: left;
+    color: #fff;
+    text-align: center;
+    height: 58px;
+    position: relative;
+    cursor: pointer;
+  }
+  .share {
+    width: 20%;
+    float: left;
+    color: #fff;
+    text-align: center;
+    height: 58px;
+    position: relative;
+    cursor: pointer;
+  }
+  .sticky-footer .share p {
+    font-size: 10px;
+    margin-top: 3px;
+  }
+  .sticky-search,
+  .sticky-filters,
+  .sticky-map,
+  .sticky-radius {
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    margin-top: 11px;
+  }
+  .sticky-footer .one-fourth p {
+    font-size: 10px;
+    margin-top: 3px;
+  }
+
+  .one-fourth.active{
+      color: #dab904;
+  }
+
+  /* content 7 */
+#modal-share {
+	.modal-header .close {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+	.modal-title {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	li {
+		margin-bottom: 15px;
+		color: #fff;
+		a {
+			text-transform: uppercase;
+			color: #fff;
+			font-weight: 700;
+			width: 100%;
+			max-width: 300px;
+		}
+		a.btn-facebook {
+			background: #3b5998;
+		}
+		a.btn-twitter {
+			background: #00acee;
+		}
+		a.btn-linkedin {
+			background: #0e76a8;
+		}
+		a.btn-email {
+			background: #ddd;
+			color: #444;
+		}
+	}
+}
+  /* last content 7 */
+  #share-buttons img {
+    width: 55px;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0;
+    display: inline;
+    }
