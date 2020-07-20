@@ -61,8 +61,10 @@ transform: translateX(-100%);
 
 /* content 2 */
 .jadwal-buka{
-    background-color: rgb(0, 0, 0) !important;
-    z-index: 10;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(37,37,37,0.5466561624649859) 100%);
+    z-index: -10;
+    margin-top: -16px;
 }
 .jadwal {
     font-family: Roboto;
@@ -118,7 +120,7 @@ transform: translateX(-100%);
     color: rgb(255, 255, 255);
 }
 .closed:after {
-    content:" Tutup";
+    content:" Toko Tutup";
     color: red;
 }
 .opening-hours-table tr td {
@@ -127,10 +129,9 @@ transform: translateX(-100%);
 /* last content 2 */
 
 /* content 3 */
-.taggbox-container{
-    margin-top: -50px;
-    z-index: -9999;
-  
+.carousel{
+    z-index: -999;
+    margin-top: -32px;
 }
 /* last content 3 */
 /* content 4 */
@@ -138,7 +139,7 @@ transform: translateX(-100%);
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(255, 255, 255);
     margin-top: 10px;
 }
