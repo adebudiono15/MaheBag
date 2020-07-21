@@ -61,14 +61,19 @@ transform: translateX(-100%);
 
 /* content 2 */
 .jadwal-buka{
-    background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5886729691876751) 100%);
     margin-top: -16px;
 }
 
-.jadwal-z-index{
-    z-index: 99;
+.gradient{
+    position: relative;
+    z-index: 3;
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0.16850490196078427) 31%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
 
+}
+
+.jadwal-z-index{
+    z-index: 2;
 }
 .jadwal {
     font-family: Roboto;
@@ -120,12 +125,18 @@ background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.588672969187675
     color:rgb(255, 255, 255);
 }
 .open:after {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
     content:" BUKA";
     color: rgb(255, 255, 255);
 }
 .closed:after {
-    content:" TOKO TUTUP";
-    color: red;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    content:" Toko Kami Sudah Tutup";
+    color: rgb(255, 255, 255);
 }
 .opening-hours-table tr td {
     padding:5px;
@@ -134,7 +145,7 @@ background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.588672969187675
 
 /* content 3 */
 .carousel{
-    margin-top: -50px;
+    margin-top: -37px;
 }
 
 .waktu-2{
@@ -349,9 +360,12 @@ background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.588672969187675
             margin-left: -10px !important;
         }
 
-        .span-peta{[
+        .span-peta{
             font-size: 12px !important;
-        ]}
+        }
+        .carousel{
+            margin-top: -40px;
+        }
      }
 
     
