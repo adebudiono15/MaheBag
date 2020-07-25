@@ -329,6 +329,13 @@ background: linear-gradient(0deg, rgba(0,0,0,0.16850490196078427) 31%, rgba(0,0,
         z-index:100;
     }
 
+    /* GALERI */
+    .instagram-image,
+    .embedPostFull{
+        pointer-events: none;
+    }
+    
+
 
     /* BREAKPOINT */
     @media (max-width: 575.98px) {
@@ -369,4 +376,46 @@ background: linear-gradient(0deg, rgba(0,0,0,0.16850490196078427) 31%, rgba(0,0,
      }
 
     
-  
+     .reviews-container {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0 ,0.5);
+        margin: 40px auto;
+        max-width: 600px;
+        max-height: 450px;
+        padding: 30px;
+      }
+      #google-reviews {
+        max-height: 450px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-right: 15px;
+      }
+      .review-wrap {
+        margin-bottom: 20px;
+      }
+      .review-wrap:last-of-type {
+        margin-bottom: 0;
+      }
+      .author {
+        margin-bottom: 15px;
+      }
+      .author-img {
+        float: left;
+        margin-right: 10px;
+        max-width: 40px;
+        transition: filter ease-in-out .3s;
+      }
+      .author-img:hover {
+        filter: brightness(2);
+      }
+      .author-name {
+        font-weight: 700;
+      }
+      .rating i {
+        color: gold;
+        padding-right: 2px;
+      }
+      .review {
+        clear: both;
+      }

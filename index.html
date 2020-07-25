@@ -29,25 +29,33 @@
 
     <!-- nav -->
     <div class="sticky-footer">
-      <div class="one-fourth active" id="Home"><i class='bx bx-fw pt-2 bx-sm bxs-home'></i>
-        <p class="mt-2">Home</p>
-      </div>
-      
-      <div class="one-fourth" id="Galeri"><i class='bx bx-fw pt-2 bx-sm bx-images'  ></i>
-        <p class="mt-2">Galeri</p>
-      </div>
-      
-      <div class="one-fourth" id="Testimoni"><i class='bx bx-fw pt-2 bx-sm bxs-user-voice' ></i>
-        <p class="mt-2">Testimoni</p>
-      </div>
-      
-      <div class="one-fourth" id="Deskripsi"><i class='bx bx-fw pt-2 bx-sm bxs-info-circle' ></i>
-        <p class="mt-2">deskripsi</p>
-      </div>
-      <div type="button" class="share" data-toggle="modal" data-target="#share"><i class='bx bx-fw pt-2 bx-sm bxs-share-alt' style='color:#ff5d57'  ></i>
-        <p class="mt-2">Share</p>
-      </div>
+        <a href="index.html">
+          <div class="one-fourth active" id="Home"><i class='bx bx-fw pt-2 bx-sm bxs-home'></i>
+            <p class="mt-2">Home</p>
+          </div>
+        </a> 
+          
+        <a href="galeri.html">
+          <div class="one-fourth" id="Galeri"><i class='bx bx-fw pt-2 bx-sm bx-images'  ></i>
+          <p class="mt-2">Galeri</p>
+        </div>
+        </a> 
+          
+        <a href="testimoni.html">
+          <div class="one-fourth" id="Testimoni"><i class='bx bx-fw pt-2 bx-sm bxs-user-voice' ></i>
+          <p class="mt-2">Testimoni</p>
+        </div>
+        </a> 
+          
+        <a href="deskripsi.html">
+          <div class="one-fourth" id="Deskripsi"><i class='bx bx-fw pt-2 bx-sm bxs-info-circle' ></i>
+            <p class="mt-2">Deskripsi</p>
+          </div>
+        </a> 
 
+          <div type="button" class="share" data-toggle="modal" data-target="#share"><i class='bx bx-fw pt-2 bx-sm bxs-share-alt' style='color:#ff5d57'  ></i>
+            <p class="mt-2">Share</p>
+          </div>
     </div>
     <!-- last nav -->
 
@@ -306,14 +314,8 @@
     time_is_widget.init({Bogor_z41c:{template:"TIME<br>DATE", date_format:"dayname, dnum monthname year"}});
     </script>
     <script>
-    $('.one-fourth').click(function() {
-    var idName = $(this).attr('id');
-    alert('You clicked ' + idName);
-    });
+        $('.carousel').carousel()
     </script>
-    <script>
- $('.carousel').carousel()
- </script>
     
   
   </body>
